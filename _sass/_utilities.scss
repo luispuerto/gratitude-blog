@@ -1,0 +1,299 @@
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+/*
+   Visibility
+   ========================================================================== */
+
+/* http://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone/ */
+
+.hidden,
+.is--hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* for preloading images */
+
+.load {
+  display: none;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+/* https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html */
+
+.visually-hidden,
+.screen-reader-text,
+.screen-reader-text span,
+.screen-reader-shortcut {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px !important;
+  width: 1px !important;
+  border: 0 !important;
+  overflow: hidden;
+}
+
+body:hover .visually-hidden a,
+body:hover .visually-hidden input,
+body:hover .visually-hidden button {
+  display: none !important;
+}
+
+/* screen readers */
+
+.screen-reader-text:focus,
+.screen-reader-shortcut:focus {
+  clip: auto !important;
+  height: auto !important;
+  width: auto !important;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 15px 23px 14px;
+  background: #fff;
+  z-index: 100000;
+  text-decoration: none;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+/*
+   Type
+   ========================================================================== */
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/*
+   Text atributes
+   ========================================================================== */
+
+/* font size styles*/
+
+.x-small {
+  font-size: x-small; 
+}
+// .small {
+//   font-size: $type-size-7;
+// }
+.large {
+  font-size: large; 
+}
+.x-large {
+  font-size: x-large;
+}
+
+.xx-large {
+  font-size: xx-large; 
+}
+// .gigantic {
+//   font-size: calc( #{$type-size-1} + 1em ); 
+// }
+
+/* font colors styles*/
+
+// .red-hover:hover {
+//     color: $primary-color !important;
+// }
+
+.red {
+  color: red; 
+}
+
+.blue {
+  color: blue; 
+}
+
+.green {
+  color: green; 
+}
+
+/*
+   Task lists
+   ========================================================================== */
+
+.task-list {
+  padding:0;
+
+  li {
+    list-style-type: none;
+  }
+
+  .task-list-item-checkbox {
+    margin-right: 0.5em;
+    opacity: 1;
+  }
+}
+
+/*
+   Alignment
+   ========================================================================== */
+
+/* clearfix */
+
+.cf {
+  clear: both;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/*
+   Images
+   ========================================================================== */
+
+/* image align left */
+
+.align-left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+
+  // @media (max-width: $small) {
+  //   width: intrinsic !important;
+    
+  // }
+
+  // @include breakpoint($small) {
+  //   float: left;
+  //   margin-right: 1em;
+  //   max-width: 60%;
+  // }
+}
+
+/* image align right */
+
+.align-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+
+  // @media (max-width: $small) {
+  //   width: intrinsic !important;
+  // }
+
+  // @include breakpoint($small) {
+  //   float: right;
+  //   margin-left: 1em;
+  //   max-width: 60% ;
+  // }
+}
+
+/* image align center */
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: intrinsic;
+}
+
+/* image align center-full */
+
+.align-center-full {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    width: 100%
+  }
+}
+
+/* fill page content container */
+
+// .full {
+//   @include breakpoint($large) {
+//     margin-right: -1 * span(2.5 of 12) !important;
+//   }
+// }
+
+/* images that are emojies should be aligned vertically with the text*/
+
+.emoji-img {
+  vertical-align: text-bottom;
+}
+
+/*
+   Icons
+   ========================================================================== */
+
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1.1em;
+  line-height: 1;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle;
+}
+
+/* social and academic icons*/
+
+// .social-icons {
+//   .fas,
+//   .fab,
+//   .far,
+//   .fal, 
+//   .ai {
+//     color: $text-color;
+//   }
+//   // @import "_icons";
+// }
+
+/*
+   Responsive Video Embed
+   ========================================================================== */
+
+.responsive-video-container {
+  position: relative;
+  margin-bottom: 1em;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// full screen video fixes
+:-webkit-full-screen-ancestor {
+  .masthead,
+  .page__footer {
+    position: static;
+  }
+}
