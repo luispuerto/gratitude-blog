@@ -3,7 +3,7 @@ layout: home
 background: '/assets/img/bg-index.jpg'
 ---
 
-On December 8, 2019, [Kurzgesagt][] published a video about the dissatisfaction and proposing a solution based on science. You can see the video below. 
+On December 8, 2019, [Kurzgesagt][] published a video about the dissatisfaction and proposing a solution based on science. If you haven't watched the video, you can do it below. 
 
 {% include video id="WPPPFqsECz0" provider="youtube" %}
 
