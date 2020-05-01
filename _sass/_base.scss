@@ -66,7 +66,8 @@ figure {
 /* Figure captions */
 
 figcaption {
-  @extend .caption; 
+  @extend .caption;
+  @extend .text-muted;
   padding-top: 0; 
 //   margin-bottom: 0.5em;
 //   color: $muted-text-color;
