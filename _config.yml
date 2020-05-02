@@ -11,6 +11,7 @@ description:        A blog about gratitude and what I'm grateful about
 author:             Luis Puerto
 baseurl:            ""
 url:                "https://gratitude.luispuerto.net"
+repository:         luispuerto/gratitude.luispuerto.net
 
 # Social Profiles
 twitter_username:   lpuerto
@@ -29,3 +30,17 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+include: 
+  - _pages
+
+# Footer
+footer: 
+  license: 
+    url: "/license" # to your licenses page or any other you want. 
+    code:
+      icon: "fab fa-osi"
+    content:
+      icon1: "fab fa-creative-commons"
+      icon2: "fab fa-creative-commons-by"
+      icon3: "fab fa-creative-commons-nc"
+      icon4: "fab fa-creative-commons-sa"
