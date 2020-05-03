@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact Me
+permalink: /contact/
 description: Have questions? I have answers.
 background: '/assets/img/bg-contact.jpg'
 form: true

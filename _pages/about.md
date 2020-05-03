@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 description: me, this blog and why I'm writing it
 background: '/assets/img/bg-about.jpg'
 ---
