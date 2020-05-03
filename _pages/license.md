@@ -1,7 +1,7 @@
 ---
 layout: page
 title: License
-permalink: /License/
+permalink: /license/
 description: for the content, code and the journal itself
 background: '/assets/img/bg-licenses.jpg'
 ---
