@@ -26,6 +26,7 @@ google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
+timezone: UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 plugins:
   - jekyll-feed
   - jekyll-paginate
@@ -59,6 +60,30 @@ exclude:
   - staticman.yml
   - tmp
   - TODO.*
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  math_engine: mathjax
+  math_engine_opts: # more info: https://kramdown.gettalong.org/math_engine/mathjax.html
+    preview: false
+    preview_as_code: false 
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
 
 # Footer
 footer: 
