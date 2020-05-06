@@ -12,7 +12,7 @@ As you probably have guessed, the journal it self is under Kurzgesagt © copyrig
 
 ## The Content
 
-The content of the blog is under Creative Commons.
+The content The content of the blog is under Creative Commons.
 
 ## The code
 
