@@ -10,5 +10,20 @@ First a little bit of introduction about his project...
 
 As I've explained in the [about page][about], this project started after I watched a video from Kur
 
+## Entry on the journal
+
+### What happened today? 
+
+- It was a slow Sunday.
+- We have pizza and fabada.
+- It was raining the whole day. 
+
+### Did something good happen to you today? 
+
+- Our son was specially cheerful today
+- I speed the day almost entirely on myself
+- I rested and prepare for the week. 
+
+### What could you be grateful for, today? 
 
 [about]: /about
